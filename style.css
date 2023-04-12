@@ -1,0 +1,236 @@
+body{background-color: #f2f2f2;}
+.container{padding:10px;}
+
+.container-flex{
+    display:flex;
+    flex-direction: column;
+}
+.title{
+    color:#ffffff;
+    padding:10px;
+    }
+
+.weather-card{
+    width:auto;
+    margin-top:20px;
+    margin:auto;
+}
+
+.weather-icon{
+    height:100px;
+    width:100px;
+    margin: auto;
+}
+.weather{width:200px;
+    margin:auto;
+text-align: center;}
+input{
+    border:none;
+    border-radius:5px;
+    padding:7px;
+    }
+.btn-search{
+    color:#ffffff;
+    background-color:#4d4d4d;
+    padding:7px;
+    border-radius:5px;
+    border:none;
+    margin:auto;
+}
+
+.weather-data{
+    border-radius:5px;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    padding:auto;
+    height:auto;
+    
+   }
+.lg-card{
+    background-color: #ffffff;
+    border-radius:5px;
+    margin-top:15px;
+    width:auto;
+    height:auto;
+    text-align: center;
+    padding:20px;
+    font-size: 20px;
+}
+.all-cards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.sm-card{
+    background-color: #ffffff;
+    border-radius:8px;
+    margin:10px;
+    width:130px;
+    height:130px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+.icon{
+    height:60px;
+    width:60px;
+    margin:auto;
+}
+.value{
+    font-size: 18px;
+    color:#fc0366;
+}
+.place{color:#00e673;}
+.date{color: #0099ff;}
+.temp{font-size:40px ;}
+
+p{
+    font-size:14px;
+    margin:0px;
+    padding:0px;
+}
+.tagline{margin:30px;
+text-align: center;}
+
+.footer {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: #fff;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a i {
+    color: #219150;
+    padding-right: .5rem;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #219150;
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+  }
+  
+  .footer .credit {
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .footer .credit span {
+    color: #219150;
+  }
+  
+
+
+@media (max-width:1200px){
+    .header{
+        padding: 2rem;
+    }
+    section{
+        padding:3rem 2rem;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .home .box{
+        padding: 2rem;
+        justify-content: center;
+        background-position: right !important;
+    }
+    .home .box .conent{
+        text-align: center;
+
+    }
+    .home .box .conent span{
+        font-size: 3rem;
+    }
+    .home .box .conent h3{
+        font-size: 4rem;
+    }
+}
+@media (max-width:768px){
+    .header #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: fixed;
+        top:0; left:-110%;
+        background: white;
+        z-index:10000;
+        width: 35rem;
+        height: 100%;
+       
+        display:flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .header .navbar.active{
+        left:0;
+        box-shadow: 0 0 0 100vw rgba(0,0,0,0.8);
+    }
+    .header .navbar a{
+        margin:1rem 0;
+        font-size: 3rem;
+    }
+    .header .navbar #nav-close{
+        display: block;
+        position: absolute;
+        top:1rem; right:2rem;
+    }
+    .contact-form{
+      flex-direction: column;
+    }
+    .msg textarea{
+      height: 80px;
+    }
+    .input-fields,
+    .msg{
+      width: 100%;
+    }
+  }
+   
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading {
+        font-size: 3rem;
+      }
+}
